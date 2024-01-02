@@ -11,7 +11,7 @@ def get_dataset(args):
     args.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     if args.dataset == 'cifar10':
-        data_path = '/kaggle/input/cifar10'
+        data_path = '/kaggle/input/cifar10-python'
         args.num_classes = 10
         # args.model = 'resnet18'
         trans_train = transforms.Compose([
